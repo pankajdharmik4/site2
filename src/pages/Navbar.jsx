@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="container mx-auto flex items-center justify-between px-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src="/images/logo.png" alt="Logo" className="h-16 md:h-24 lg:h-32 w-auto" />
+            <img src="/images/logo.png" alt="Logo" className="h-16 md:h-16 lg:h-24 w-auto" />
           </div>
 
           {/* Desktop Nav Links */}
@@ -52,7 +52,7 @@ const Navbar = () => {
               size="xs"
               variant="fill"
               onClick={openModal}
-              className="text-white min-w-[120px] lg:min-w-[200px] rounded-lg lg:rounded-[12px] border border-white px-4 lg:px-[34px] py-2 lg:py-[14px] font-montserrat font-medium"
+              className="text-white min-w-[120px] lg:min-w-[200px] rounded-lg lg:rounded-[12px] border border-white px-4 lg:px-[34px] p-4 lg:py-[14px] font-montserrat font-medium"
             >
               Book Now
             </Button>
