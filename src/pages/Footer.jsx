@@ -12,13 +12,13 @@ const Footer = () => {
             <img src="images/logo.png" alt="Logo" className="h-16 mx-auto md:mx-0" /> {/* Center align logo in mobile */}
             <p className="pt-[5%] font-montserrat font-medium">15 Cherry Orchard, Staines,<br/> Middlesex TW18 2DE</p>
             <p className="font-montserrat font-medium my-2">
-              <a href="tel:01784453448" className="text-black hover:text-[#13192d] flex items-center text-sm">
+              <a href="tel:01784453448" className="text-black hover:text-[#13192d] text-sm">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
                 01784 453448
               </a>
             </p>
             <p className="font-montserrat font-medium">
-              <a href="mailto:info@rothleylodgedentalpractice.co.uk" className="text-black hover:text-[#13192d] flex items-center text-sm">
+              <a href="mailto:info@rothleylodgedentalpractice.co.uk" className="text-black hover:text-[#13192d] text-sm mx-auto md:mx-0">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                 info@rothleylodgedentalpractice.co.uk
               </a>
@@ -73,8 +73,8 @@ const Footer = () => {
 
           {/* Privacy and Terms Links */}
           <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-white font-montserrat font-medium pr-2">Privacy Policy</a>
-            <a href="#" className="text-white hover:text-white font-montserrat font-medium">Terms and Conditions</a>
+            <a href="#" className="text-white hover:text-white font-montserrat font-medium text-sm pr-2">Privacy Policy</a>
+            <a href="#" className="text-white hover:text-white font-montserrat font-medium text-sm">Terms and Conditions</a>
           </div>
         </div>
       </div>

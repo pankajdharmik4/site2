@@ -4,9 +4,9 @@ import Modal from './BookingModal'; // Adjust the import path based on your fold
 
 const Hero = ({ openModal }) => {
   return (
-    <div className="relative w-full h-screen md:mb-2 bg-cover bg-center" style={{ backgroundImage: "url('/images/bg-img.png')" }}>
+    <div className="relative w-full md:h-screen md:mb-2 bg-cover bg-center" style={{ backgroundImage: "url('/images/bg-img.png')" }}>
       {/* Mobile View */}
-      <div className="block md:hidden relative w-full h-full flex flex-col items-center justify-center text-center bg-[#13192D] p-4">
+      <div className="block p-8 md:hidden relative w-full h-full flex flex-col items-center justify-center text-center bg-[#13192D] p-4">
         <img
           src="/images/mobile-bg.png" // Replace with the actual image path
           alt="About Us"
@@ -46,12 +46,12 @@ const Hero = ({ openModal }) => {
       </div>
 
       {/* Logos */}
-      <div className="absolute invisible md:visible bottom-[-5%] right-0 w-[100%] md:w-[60%] lg:w-[40%] flex justify-around items-center border border-white bg-white rounded-lg shadow-lg p-2 md:p-4 ml-4 lg:mr-[10%]">
+      {/* <div className="absolute invisible md:visible bottom-[-5%] right-0 w-[100%] md:w-[60%] lg:w-[40%] flex justify-around items-center border border-white bg-white rounded-lg shadow-lg p-2 md:p-4 ml-4 lg:mr-[10%]">
         <img src="images/img_image_4.png" alt="Logo 2" className="h-6 md:h-8" />
         <img src="images/img_image_5.png" alt="Logo 3" className="h-6 md:h-8" />
         <img src="images/img_image_6.png" alt="Logo 4" className="h-6 md:h-8" />
         <img src="images/img_image_7.png" alt="Logo 5" className="h-6 md:h-8" />
-      </div>
+      </div> */}
     </div>
   );
 };

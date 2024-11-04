@@ -58,14 +58,14 @@ const Navbar = () => {
             </Button>
 
             {/* Contact Number for Desktop */}
-            {/* <a href="tel:01784453448" className="text-white hover:text-gray-300 flex items-center text-xl mt-2">
+            <a href="tel:01784453448" className="text-white hover:text-gray-300 flex items-center text-xl mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
               01784 453448
-            </a> */}
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden ml-4">
+          <div className="lg:hidden ml-4 ">
             <button onClick={toggleMenu} className="text-white focus:outline-none">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -77,10 +77,10 @@ const Navbar = () => {
         {/* Mobile Navbar Links */}
         {isMenuOpen && (
           <div className="lg:hidden z-40 bg-white absolute top-16 left-0 right-0 shadow-lg p-4">
-            <a href="#about" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">About Us</a>
-            <a href="#process" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">The Process</a>
-            <a href="#faq" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">FAQ</a>
-            <a href="#testimonial" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">Testimonial</a>
+            <a href="#about" onClick={closeMenu} className="block font-montserrat font-medium text-black p-2">About Us</a>
+            <a href="#process" onClick={closeMenu} className="block font-montserrat font-medium text-black p-2">The Process</a>
+            <a href="#faq" onClick={closeMenu} className="block font-montserrat font-medium text-black p-2">FAQ</a>
+            <a href="#testimonial" onClick={closeMenu} className="block font-montserrat font-medium text-black p-2">Testimonial</a>
 
             <Button
               size="xs"
@@ -92,10 +92,10 @@ const Navbar = () => {
             </Button>
 
             {/* Contact Number for Mobile */}
-            {/* <a href="tel:01784453448" className="text-black hover:text-[#13192d] flex items-center text-xl mt-4">
+            <a href="tel:01784453448" className="text-black hover:text-[#13192d] flex items-center text-xl mt-4">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
               01784 453448
-            </a> */}
+            </a>
           </div>
         )}
       </nav>

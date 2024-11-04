@@ -33,7 +33,7 @@ const AboutUs = () => {
           <img
             src="images/aboutbg.png" // Replace with actual image path
             alt="Decorative Image"
-            className="w-3/4 md:w-full h-auto object-contain opacity-80"
+            className="w-3/4 md:w-full h-auto object-contain opacity-80 overflow-hidden"
           />
         </div>
       </div>

@@ -2,21 +2,41 @@ import React, { useState } from 'react';
 
 const faqs = [
   {
-    question: "What is the process of getting a dental implant?",
-    answer: "The dental implant process typically involves a consultation, placing a titanium post into the jawbone, allowing time for healing and bone integration, and finally attaching a custom-made crown. This process can take several months, but it results in a secure, natural-looking tooth replacement."
+    question: "What are dental implants, and how do they work?",
+    answer: "Dental implants are artificial tooth roots made of titanium, surgically placed into the jawbone to support replacement teeth. They provide a stable foundation for crowns, bridges, or dentures."
   },
   {
-    question: "Who are dental implants for?",
-    answer: "Dental implants are ideal for adults who are missing one or more teeth, have healthy gums, and enough jawbone to support an implant. They are a great solution for those seeking a permanent, natural-feeling replacement for missing teeth."
+    question: "Am I a suitable candidate for dental implants?",
+    answer: "Most people with good oral and general health are candidates for dental implants. Your dentist will assess your specific case to determine eligibility."
   },
   {
-    question: "How long do dental implants last?",
-    answer: "With proper care, dental implants can last 15-25 years or even a lifetime. Regular dental check-ups and good oral hygiene are essential to prolonging the life of your implant."
+    question: "Is the dental implant placement procedure painful?",
+    answer: "The procedure is typically performed under local anaesthesia or sedation, so you should not feel significant pain during the surgery. Discomfort afterwards can usually be managed with over-the-counter pain medications."
   },
   {
-    question: "How painful is getting a dental implant?",
-    answer: "Dental implant surgery is typically done under local anesthesia, so most patients feel little to no pain during the procedure. Some mild soreness or discomfort may occur afterward, which can be managed with over-the-counter pain relief."
+    question: "How long does the entire dental implant process take?",
+    answer: "The complete dental implant process, including healing and final restoration, can take several months. It may vary depending on individual factors and the need for additional procedures."
   },
+  {
+    question:"What is the success rate of dental implants?",
+    answer:"Dental implants have a high success rate, often exceeding 95%. Success depends on factors such as oral hygiene, bone quality, and proper post-operative care."
+  },
+  {
+    question:"Can I eat normally after getting dental implants?",
+    answer:"Once the implants have integrated with the bone and the final restoration is in place, you can typically eat a normal diet without restrictions."
+  },
+  {
+    question:"How do I care for and clean my dental implants?",
+    answer:"Dental implants require regular oral hygiene practices, including brushing, flossing, and routine dental check-ups, just like natural teeth."
+  },
+  {
+    question:"Are there any potential complications or risks associated with dental implants?",
+    answer:"While complications are rare, they can include infection, implant failure, or complications during surgery. Discuss potential risks with your dentist before the procedure."
+  },
+  {
+    question:"How long can I expect dental implants to last?",
+    answer:"Dental implants can last a lifetime with proper care and maintenance, making them a durable and long-term solution for missing teeth."
+  }
 ];
 
 const FAQSection = () => {
@@ -32,7 +52,7 @@ const FAQSection = () => {
         <h2 className="font-lato font-bold text-3xl text-gray-800 text-center mb-10">
           Frequently Asked Questions
         </h2>
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto md:w-full">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4">
               <button
