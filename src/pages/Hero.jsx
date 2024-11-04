@@ -33,7 +33,7 @@ const Hero = ({ openModal }) => {
           onClick={openModal}
           className="bg-white text-xs md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mt-[5%]"
         >
-          Get Free Invisalign Consultation
+          Get Free Implant Consultation
         </button>
       </div>
 
@@ -41,7 +41,7 @@ const Hero = ({ openModal }) => {
       <div className="hidden md:flex relative w-full h-full md:h-[500px] lg:h-[600px] flex-col-reverse md:flex-row-reverse">
         {/* Section: Text on the Right */}
         <div className="flex flex-col items-center justify-center w-full lg:w-[60%] md:p-4 p-2 mt-[17%] text-white">
-          <h1 className="text-xs md:text-4xl lg:text-6xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">
+          <h1 className="text-xs md:text-3xl lg:text-4xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">
             Restore Your Smile with Expert Dental Implants in Staines
           </h1>
           <p className="text-xs md:text-sm mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
@@ -61,7 +61,7 @@ const Hero = ({ openModal }) => {
             onClick={openModal}
             className="bg-white text-xs md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mb-[10%]"
           >
-            Get Free Invisalign Consultation
+            Get Free Implant Consultation
           </button>
         </div>
       </div>
