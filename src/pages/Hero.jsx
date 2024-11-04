@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 const Hero = ({ openModal }) => {
   return (
     <>
-    <div className="relative w-full md:h-screen  md:mb-2 bg-cover bg-center z-20" style={{ backgroundImage: "url('/images/bg-img.png')" }}>
+    <div className="relative w-full md:h-screen  md:mb-2 bg-cover bg-center z-20" style={{ backgroundImage: "url('/images/bg-img2.png')" }}>
       {/* Mobile View */}
       <div className="px-8 md:hidden relative w-full h-full flex flex-col items-center justify-center text-center bg-[#13192D] p-4">
         <img
