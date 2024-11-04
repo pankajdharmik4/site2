@@ -73,8 +73,8 @@ const Footer = () => {
 
           {/* Privacy and Terms Links */}
           <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-white font-montserrat font-medium text-sm pr-2">Privacy Policy</a>
-            <a href="#" className="text-white hover:text-white font-montserrat font-medium text-sm">Terms and Conditions</a>
+            <a href="#" className="text-white hover:text-white font-montserrat text-xs md:text-sm pr-2">Privacy Policy</a>
+            <a href="#" className="text-white hover:text-white font-montserrat text-xs md:text-sm">Terms and Conditions</a>
           </div>
         </div>
       </div>
