@@ -6,11 +6,11 @@ const AboutUs = () => {
       <div className="container mx-auto px-6 md:px-[10%]">
         <div className="flex flex-col md:flex-row items-center relative">
           {/* Section 1 - Main Image */}
-          <div className="w-full md:w-[40%] mb-8 md:mb-0 px-4  z-40">
+          <div className="w-full md:w-[40%] mb-8 md:mb-0  z-40">
             <img
-              src="images/aboutus.png" // Replace with actual image path
+              src="images/b2-img.jpg" // Replace with actual image path
               alt="About Us"
-              className="w-full h-auto rounded-lg object-contain"
+              className="w-full h-full rounded-lg object-contain"
             />
           </div>
 
