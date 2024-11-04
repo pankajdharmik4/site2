@@ -29,13 +29,13 @@ const AboutUs = () => {
         </div>
 
         {/* Section - Bottom Left Image */}
-        <div className="absolute bottom-0 left-0 transform translate-y-1/2 -translate-x-1/4">
+        {/* <div className="absolute bottom-0 left-0 transform translate-y-1/2 -translate-x-1/4">
           <img
             src="images/aboutbg.png" // Replace with actual image path
             alt="Decorative Image"
             className="w-3/4 md:w-full h-auto object-contain opacity-80 overflow-hidden"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
