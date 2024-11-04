@@ -3,19 +3,19 @@ import { Carousel } from 'react-responsive-carousel'; // Assuming you're using r
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Carousel styles
 
 const beforeAfterImages = [
-  'images/ba1.jpeg',
-  'images/ba2.jpeg',
-  'images/ba3.jpeg',
-  'images/ba4.jpeg',
-  'images/ba5.jpeg',
-  'images/ba6.jpeg',
+  'images/ba1.png',
+  'images/ba2.png',
+  'images/ba3.png',
+  'images/ba4.png',
+  'images/ba5.png',
+  'images/ba6.png',
 ];
 
 const BeforeAfterSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div id="gallery" className="bg-gray-100 py-4">
+    <div id="gallery" className="bg-white py-4">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-800 text-center mb-10">
           Before & After Invisalign Treatment
