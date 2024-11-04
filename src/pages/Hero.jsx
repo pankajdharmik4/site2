@@ -30,11 +30,15 @@ const Hero = ({ openModal }) => {
       <div className="hidden md:flex relative w-full h-full md:h-[500px] lg:h-[600px] flex-col-reverse md:flex-row-reverse">
         {/* Section: Text on the Right */}
         <div className="flex flex-col items-center justify-center w-full lg:w-[60%] md:p-4 p-2 mt-[17%] text-white">
-          <h1 className="text-sx md:text-4xl lg:text-6xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">
-            Restore Your Smile with Expert Dental Implants in Staines
+          <h1 className="text-sx md:text-2xl lg:text-3xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">
+          As Taylor once said - “You’ve got a smile that could light up this whole town!” Let us get that back for you with dental implants! If you're looking for a long-lasting solution to missing teeth, We offer dental implants, a secure and natural-looking option.
           </h1>
-          <p className="text-xs md:text-xl mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
-            At Rothley Lodge Dental Surgery, we offer advanced dental implant solutions tailored to restore both your smile and confidence. Our experienced team uses the latest technology to provide safe, comfortable, and long-lasting implant procedures that feel and look natural.
+          <p className="text-xs md:text-sm mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
+          At Rothley Lodge Dental Practice, we boast over 40 years of experience and have earned our reputation as an award-winning practice. Our skilled team is led by esteemed dentist Simon Shard, recognised as Dentistry Person of the Year in 2022.
+          </p>
+          <p className="text-xs md:text-sm  mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
+          Dental implants are designed to look and function like natural teeth, providing a stable foundation for crowns or bridges. Unlike dentures, they do not shift or slip, allowing you to eat, speak, and smile with confidence.
+          At Rothley Lodge Dental Practice, your journey to a renewed smile begins with us!
           </p>
           <button
             onClick={openModal}
