@@ -48,9 +48,12 @@ const Hero = ({ openModal }) => {
             As Taylor once said - “You've got a smile that could light up this whole town!” Let us get that back for you with dental implants! If you're looking for a long-lasting solution to missing teeth, We offer dental implants, a secure and natural-looking option.
           </p>
           <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
-            At Rothley Lodge Dental Practice, we boast over 40 years of experience and have earned our reputation as an award-winning practice. Our skilled team is led by esteemed dentist Simon Shard, recognised as Dentistry Person of the Year in 2022.
+            At Rothley Lodge Dental Practice, we boast over 40 years of experience and have earned our reputation as an award-winning practice. 
           </p>
-          <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
+          <p className="text-xs hidden md:block md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
+              Our skilled team is led by esteemed dentist Simon Shard, recognised as Dentistry Person of the Year in 2022.
+          </p>
+          <p className="text-xs hidden md:block md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
             Dental implants are designed to look and function like natural teeth, providing a stable foundation for crowns or bridges. Unlike dentures, they do not shift or slip, allowing you to eat, speak, and smile with confidence.         At Rothley Lodge Dental Practice, your journey to a renewed smile begins with us!
 
           </p>
