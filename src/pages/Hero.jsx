@@ -33,7 +33,7 @@ const Hero = ({ openModal }) => {
           onClick={openModal}
           className="bg-white text-xs md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mt-[5%]"
         >
-          Get A Free Implant Consultation
+          Get A Free Consultation
         </button>
       </div>
 
@@ -61,7 +61,7 @@ const Hero = ({ openModal }) => {
             onClick={openModal}
             className="bg-white text-xs md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mb-[10%]"
           >
-            Get A Free Implant Consultation
+            Get A Free Consultation
           </button>
         </div>
       </div>
