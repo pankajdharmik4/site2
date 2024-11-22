@@ -60,7 +60,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row bg-[#13192d] px-[10%] justify-between items-center border-t border-gray-700 py-4">
           {/* Social Media Icons */}
           <div className="flex space-x-4 mb-4 md:mb-0">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/rothleylodgedental/" target="_blank" rel="noopener noreferrer">
               <img src="images/instagram.png" alt="Instagram" className="h-6" />
             </a>
             <a href="https://www.facebook.com/RothleyLodgePractice/" target="_blank" rel="noopener noreferrer">

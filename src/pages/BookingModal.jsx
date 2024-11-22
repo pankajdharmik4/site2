@@ -75,7 +75,7 @@ const BookingModal = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 md:mx-0 mx-2">
       <div className="bg-white rounded-lg p-6 md:p-8 max-w-md w-full shadow-lg">
-        <h2 className="text-2xl font-bold mb-4 text-[#13192D] text-center">Book Your Appointment</h2>
+      <h5 className="text-2xl font-bold mb-4 text-[#13192D] text-center">Please fill out your details and a member of our team will be in touch</h5>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
