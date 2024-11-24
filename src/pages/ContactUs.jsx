@@ -118,7 +118,7 @@ const FormSection = () => {
               />
               {phoneError && <p className="text-red-500 text-sm">{phoneError}</p>}
             </div>
-            <div className="mb-4">
+            <div className="mb-2">
               <textarea 
                 type="text" 
                 id="message" 
@@ -128,12 +128,15 @@ const FormSection = () => {
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
               />
             </div>
+            <div className="mb-4">
+              <p class="text-gray-400 text-xs">The Team Will Contact You</p>
+            </div>
             <button 
               type="submit" 
               className={isSubmitDisabled ? "w-full bg-[#808080] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#808080] transition duration-300": "w-full bg-[#13192d] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300" }
               disabled={isSubmitDisabled}
             >
-              Book Now!
+              Submit
             </button>
           </form>
         </div>

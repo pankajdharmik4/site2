@@ -75,7 +75,7 @@ const BookingModal = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 md:mx-0 mx-2">
       <div className="bg-white rounded-lg p-6 md:p-8 max-w-md w-full shadow-lg">
-      <h5 className="text-2xl font-bold mb-4 text-[#13192D] text-center">Please fill out your details and a member of our team will be in touch</h5>
+        <h5 className="text-2xl font-bold mb-4 text-[#13192D] text-center">Please fill out your details and a member of our team will be in touch</h5>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
@@ -131,7 +131,7 @@ const BookingModal = ({ isOpen, onClose }) => {
             />
           </div> */}
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message (Optional)</label>
             <textarea
               id="message"
@@ -140,6 +140,9 @@ const BookingModal = ({ isOpen, onClose }) => {
               rows="3"
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
             ></textarea>
+          </div>
+          <div className="mb-4">
+            <p class="text-gray-400 text-xs">The Team Will Contact You</p>
           </div>
 
           <div className="flex justify-end space-x-2 mt-6">
@@ -152,10 +155,10 @@ const BookingModal = ({ isOpen, onClose }) => {
             </button>
             <button
               type="submit"
-              className={isSubmitDisabled ? "px-4 py-2 bg-[#808080] text-white hover:bg-[#808080] transition rounded-md" :  "px-4 py-2 bg-[#13192D] text-white hover:bg-[#0e1a4d] transition rounded-md"}
+              className={isSubmitDisabled ? "px-4 py-2 bg-[#808080] text-white hover:bg-[#808080] transition rounded-md" : "px-4 py-2 bg-[#13192D] text-white hover:bg-[#0e1a4d] transition rounded-md"}
               disabled={isSubmitDisabled}
             >
-              Book Now
+              Submit
             </button>
           </div>
         </form>
