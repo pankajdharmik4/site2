@@ -18,7 +18,7 @@ const BeforeAfterSection = () => {
     <div id="gallery" className="bg-white py-4">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-800 text-center mb-10">
-          Before & After Invisalign Treatment
+          Before & After Implants Treatment
         </h2>
 
         {/* Desktop View - Grid Layout */}
