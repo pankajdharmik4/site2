@@ -9,7 +9,7 @@ const AboutUs = () => {
     "images/brand-logo2.jpg",
     "images/brand-logo3.jpg",
     "images/brand-logo4.jpg",
-    "images/brand-logo5.jpg",
+    // "images/brand-logo5.jpg",
   ];
 
   return (
@@ -36,7 +36,7 @@ const AboutUs = () => {
               With a legacy as the oldest dental practice in Staines, Rothley Lodge Dental Surgery has cared for generations with exceptional dental expertise and a commitment to quality. Our skilled team, led by award-winning dentists, combines decades of experience with the latest implant technology to provide seamless, effective, and lasting dental implant solutions.
             </p>
             <p className="text-white font-montserrat font-normal">
-              We understand that each patient’s journey is unique, which is why we prioritize personalized care in a friendly, professional environment. At Rothley Lodge, we ensure your dental health and comfort are always in expert hands.
+              We understand that each patient’s journey is unique, which is why we prioritize personalised care in a friendly, professional environment. At Rothley Lodge, we ensure your dental health and comfort are always in expert hands.
             </p>
           </div>
         </div>

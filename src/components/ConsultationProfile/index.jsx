@@ -4,7 +4,7 @@ import React from "react";
 export default function ConsultationProfile({
   consultationImage = "images/img_layer_1.svg",
   consultationTitle = "Consultation",
-  consultationDescription = "Book a consultation to discuss your dental goals and create a personalized treatment plan.",
+  consultationDescription = "Book a consultation to discuss your dental goals and create a personalised treatment plan.",
   ...props
 }) {
   return (

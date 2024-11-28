@@ -16,7 +16,7 @@ export default function Bar() {
           onClick={handleClick}
         >
           <img 
-            src="images/banner1.png" 
+            src="images/banner.png" 
             alt="Desktop Poster" 
             className="w-full h-auto rounded-lg"
           />
