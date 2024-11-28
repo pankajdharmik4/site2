@@ -8,7 +8,7 @@ const Footer = () => {
       <div>
         <div className="flex flex-col md:flex-row px-[10%] justify-between mb-8 gap-6">
           {/* Section 1 - Logo, Address, Contact */}
-          <div className="flex-1 flex flex-col justify-start mb-6 lg:mb-0 text-center md:text-center items-center min-h-[300px]">
+          <div className="flex-1 flex flex-col justify-start mb-6 lg:mb-0 text-center md:text-left items-start min-h-[300px]">
             <img src="images/logo.png" alt="Logo" className="h-16 w-32 mx-auto md:mx-0" />
             <p className="pt-[5%] font-montserrat font-medium">15 Cherry Orchard, Staines,<br /> Middlesex TW18 2DE</p>
             <p className="font-montserrat font-medium my-2">
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="flex-1 flex flex-col justify-start mb-6 lg:mb-0 text-center md:text-center min-h-[300px]">
+          <div className="flex-1 flex flex-col justify-start mb-6 lg:mb-0 text-center md:text-left min-h-[300px]">
             <h3 className="text-lg mb-2 font-montserrat font-semibold">Quick Links</h3>
             <ul>
               <li><a href="#" className="text-black hover:text-[#13192d] font-montserrat font-medium">Home</a></li>
@@ -40,12 +40,12 @@ const Footer = () => {
           </div>
 
           {/* Opening Hours and Subscribe */}
-          <div className="flex-1 flex flex-col justify-between mb-6 lg:mb-0 text-center md:text-center min-h-[300px]">
+          <div className="flex-1 flex flex-col justify-between mb-6 lg:mb-0 text-center md:text-left min-h-[300px]">
             <h3 className="text-lg mb-2 font-montserrat font-semibold">Opening Hours</h3>
             <p className="font-montserrat font-medium">Mon - Fri: 9 AM - 6 PM</p>
             <p className="font-montserrat font-medium">Sat: 10 AM - 4 PM</p>
             <p className="font-montserrat font-medium">Sun: Closed</p>
-            <div className="flex flex-col items-center md:items-center my-8">
+            <div className="flex flex-col items-center md:items-start my-8">
               <h3 className="text-lg font-montserrat font-semibold mb-2">Subscribe to our Newsletter</h3>
               <input
                 type="email"
