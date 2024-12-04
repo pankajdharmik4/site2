@@ -47,7 +47,7 @@ const Navbar = () => {
           </div> */}
 
           {/* Book Now Button and Contact for Desktop */}
-          <div className="hidden lg:flex flex-col items-center">
+          <div className="hidden lg:flex flex-col items-center p-4">
             <Button
               size="xs"
               variant="fill"

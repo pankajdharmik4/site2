@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row px-[10%] justify-between mb-8 gap-6">
           {/* Section 1 - Logo, Address, Contact */}
           <div className="flex-1 flex flex-col justify-start mb-6 lg:mb-0 text-center md:text-left md:items-start md:min-h-[300px]">
-            <img src="images/logo.png" alt="Logo" className="h-16 w-32 mx-auto md:mx-0" />
+            <img src="images/logo.png" alt="Logo" className="h-16 w-32 mx-auto md:mx-0 rounded-md" />
             <p className="pt-[5%] font-montserrat font-medium">15 Cherry Orchard, Staines,<br /> Middlesex TW18 2DE</p>
             <p className="font-montserrat font-medium my-2">
               <a href="tel:01784453448" className="text-black hover:text-[#13192d] text-sm">

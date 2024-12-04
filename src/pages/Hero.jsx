@@ -19,7 +19,7 @@ const Hero = ({ openModal }) => {
         </h1>
         <p className="text-xs font-montserrat font-normal text-white">
         {/* As Taylor Swift once said - “You've got a smile that could light up this whole town!”  */}
-        Let us get that back for you with dental implants! If you're looking for a long-lasting solution to missing teeth, We offer dental implants, a secure and natural-looking option.
+        Let's get that smile back for you with dental implants! If you're looking for a long-lasting solution to missing teeth, We offer dental implants, a secure and natural-looking option.
         </p>
         <p className="text-xs font-montserrat font-normal text-white">
         At Rothley Lodge Dental Practice, we boast over 40 years of experience and have earned our reputation as an award-winning practice. 
