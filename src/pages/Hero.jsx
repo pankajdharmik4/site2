@@ -15,7 +15,7 @@ const Hero = ({ openModal }) => {
           className="w-64 h-64 rounded-lg object-cover mb-4 bg-white" // Adjust size as needed
         />
         <h1 className="text-2xl font-lato font-bold text-white mb-2">
-          Restore Your Smile with Expert Dental Implants in Staines
+          Restore Your Smile with Dental Implants in Staines
         </h1>
         <p className="text-xs font-montserrat font-normal text-white">
         {/* As Taylor Swift once said - “You've got a smile that could light up this whole town!”  */}
@@ -43,7 +43,7 @@ const Hero = ({ openModal }) => {
         {/* Section: Text on the Right */}
         <div className="flex flex-col items-center justify-center w-full lg:w-[60%] md:p-4 p-2 mt-[10%] text-white">
           <h1 className="text-xs md:text-3xl lg:text-4xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">
-            Restore Your Smile with Expert Dental Implants in Staines
+            Restore Your Smile with Dental Implants in Staines
           </h1>
           <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
             {/* As Taylor Swift once said - “You've got a smile that could light up this whole town!”  */}
