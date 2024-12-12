@@ -6,11 +6,12 @@ import Navbar from './Navbar';
 const Hero = ({ openModal }) => {
   return (
     <>
-    <div className="relative w-full md:h-screen  md:mb-2 bg-cover bg-center z-20" style={{ backgroundImage: "url('/images/bg-img2.png')" }}>
+    <div className="relative w-full md:h-screen  md:mb-2 bg-cover bg-center z-20" style={{ backgroundImage: "url('/images/bg-img3.png')" }}>
+    <Navbar/>
       {/* Mobile View */}
       <div className="px-8 md:hidden relative w-full h-full flex flex-col items-center justify-center text-center bg-[#13192D] p-4">
         <img
-          src="/images/mobile-bg.png" // Replace with the actual image path
+          src="/images/mobile-bg1.png" // Replace with the actual image path
           alt="About Us"
           className="w-64 h-64 rounded-lg object-cover mb-4 bg-white" // Adjust size as needed
         />
@@ -42,8 +43,7 @@ const Hero = ({ openModal }) => {
       <div className="hidden md:flex relative w-full h-full md:h-[500px] lg:h-[600px] flex-col-reverse md:flex-row-reverse">
         {/* Section: Text on the Right */}
         <div className="flex flex-col items-center justify-center w-full lg:w-[60%] md:p-4 p-2 mt-[10%] text-white">
-          <h1 className="text-xs md:text-3xl lg:text-4xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">
-            Restore Your Smile with Dental Implants in Staines
+          <h1 className="text-xs md:text-3xl lg:text-4xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">Restore Your Smile with Dental Implants in Staines
           </h1>
           <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
             {/* As Taylor Swift once said - “You've got a smile that could light up this whole town!”  */}

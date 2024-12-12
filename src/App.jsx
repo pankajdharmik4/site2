@@ -26,7 +26,7 @@ const App = () => {
   return (
  
     <>
-        <Navbar/>
+        {/* <Navbar/> */}
         <BookingModal isOpen={isModalOpen} onClose={closeModal} />
 
        {/* <Hero/> */}
