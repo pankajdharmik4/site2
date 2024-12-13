@@ -9,7 +9,7 @@ const Hero = ({ openModal }) => {
     <div className="relative w-full md:h-screen  md:mb-2 bg-cover bg-center z-20" style={{ backgroundImage: "url('/images/bg-img3.png')" }}>
     <Navbar/>
       {/* Mobile View */}
-      <div className="px-8 md:hidden relative w-full h-full flex flex-col items-center justify-center text-center bg-[#13192D] p-4">
+      <div className="px-8 md:hidden relative w-full h-full flex flex-col items-center justify-center text-center bg-[#00102d] p-4">
         <img
           src="/images/mobile-bg1.png" // Replace with the actual image path
           alt="About Us"
@@ -33,7 +33,7 @@ const Hero = ({ openModal }) => {
         </p> */}
         <button
           onClick={openModal}
-          className="bg-white text-xs md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mt-[5%]"
+          className="bg-white text-xs md:text-sm lg:text-xl text-[#00102d] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mt-[5%]"
         >
           Get a Free Consultation
         </button>
@@ -42,7 +42,7 @@ const Hero = ({ openModal }) => {
       {/* Desktop View */}
       <div className="hidden md:flex relative w-full h-full md:h-[500px] lg:h-[600px] flex-col-reverse md:flex-row-reverse">
         {/* Section: Text on the Right */}
-        <div className="flex flex-col items-center justify-center w-full lg:w-[60%] md:p-4 p-2 mt-[10%] text-white">
+        <div className="flex flex-col items-center justify-center w-full lg:w-[60%] md:p-4 p-2 mt-[4%] text-white">
           <h1 className="text-xs md:text-3xl lg:text-4xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">Restore Your Smile with Dental Implants in Staines
           </h1>
           <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
@@ -61,7 +61,7 @@ const Hero = ({ openModal }) => {
           </p> */}
           <button
             onClick={openModal}
-            className="bg-white text-xs md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mb-[10%]"
+            className="bg-white text-xs md:text-sm lg:text-xl text-[#00102d] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mb-[10%]"
           >
             Get a Free Consultation
           </button>

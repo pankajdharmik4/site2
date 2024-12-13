@@ -29,7 +29,7 @@ const steps = [
 
 const HowInvisalignWorks = () => {
   return (
-    <div className="py-16 bg-[#13192d] ">
+    <div className="py-16 bg-[#00102d] ">
       <div className="container mx-auto px-6 ">
         {/* Section Title */}
         <h2 className="text-3xl font-bold text-white text-center mb-10">How Invisalign Works</h2>

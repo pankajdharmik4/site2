@@ -5,7 +5,7 @@ const ProcessCard = ({ step, title, description }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg p-4 md:p-6 w-full md:w-72 h-full flex flex-col text-center md:text-left min-h-[300px]">
       <span className="font-bold text-lg md:text-xl mb-2 block">Step {step}</span>
-      <h3 className="text-lg md:text-xl font-semibold text-[#13192D] mb-2">{title}</h3>
+      <h3 className="text-lg md:text-xl font-semibold text-[#00102d] mb-2">{title}</h3>
       <p className="text-sm md:text-base text-gray-600 flex-grow">
         {description}
       </p>
@@ -41,7 +41,7 @@ const ProcessSection = () => {
     <section id="process" className="py-12 px-4 bg-gray-100">
       {/* Title and Description */}
       <div className="text-center mb-10 mx-[5%] md:mx-[20%]">
-        <h2 className="text-2xl md:text-5xl font-bold text-[#13192D] mb-4">The Process of Getting Dental Implants</h2>
+        <h2 className="text-2xl md:text-5xl font-bold text-[#00102d] mb-4">The Process of Getting Dental Implants</h2>
         <p className="text-xs md:text-lg text-gray-600">
         Dental implants are a transformative solution for restoring smiles and confidence, offering a durable and natural-looking replacement for missing or failing teeth as well as a replacement for loose dentures. The process requires the use of advanced technology and precision to ensure comfort, safety, and long-term success. Here's how the placement process unfolds:
         </p>
@@ -58,8 +58,8 @@ const ProcessSection = () => {
             />
             {index < processSteps.length - 1 && (
               <>
-                <ArrowDownIcon className="w-6 h-6 text-[#13192D] block md:hidden my-4" />
-                <ArrowRightIcon className="w-6 h-6 text-[#13192D] hidden md:block" />
+                <ArrowDownIcon className="w-6 h-6 text-[#00102d] block md:hidden my-4" />
+                <ArrowRightIcon className="w-6 h-6 text-[#00102d] hidden md:block" />
               </>
             )}
           </React.Fragment>

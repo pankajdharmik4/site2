@@ -9,16 +9,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row px-[10%] justify-between mb-8 gap-6">
           {/* Section 1 - Logo, Address, Contact */}
           <div className="flex-1 flex flex-col justify-start mb-6 lg:mb-0 text-center md:text-left md:items-start md:min-h-[300px]">
-            <img src="images/logo.png" alt="Logo" className="h-16 w-32 mx-auto md:mx-0 rounded-md" />
+            <img src="images/logo.png" alt="Logo" className="h-16 w-28 mx-auto md:mx-0 rounded-md" />
             <p className="pt-[5%] font-montserrat font-medium">15 Cherry Orchard, Staines,<br /> Middlesex TW18 2DE</p>
             <p className="font-montserrat font-medium my-2">
-              <a href="tel:01784453448" className="text-black hover:text-[#13192d] text-sm">
+              <a href="tel:01784453448" className="text-black hover:text-[#00102d] text-sm">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
                 01784 453448
               </a>
             </p>
             <p className="font-montserrat font-medium">
-              <a href="mailto:info@rothleylodgedentalpractice.co.uk" className="text-black hover:text-[#13192d] text-sm mx-auto md:mx-0">
+              <a href="mailto:info@rothleylodgedentalpractice.co.uk" className="text-black hover:text-[#00102d] text-sm mx-auto md:mx-0">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                 info@rothleylodgedentalpractice.co.uk
               </a>
@@ -29,13 +29,13 @@ const Footer = () => {
           <div className="flex-1 flex flex-col justify-start mb-6 lg:mb-0 text-center md:text-left md:min-h-[300px]">
             <h3 className="text-lg mb-2 font-montserrat font-semibold">Quick Links</h3>
             <ul>
-              <li><a href="#" className="text-black hover:text-[#13192d] font-montserrat font-medium">Home</a></li>
-              <li><a href="#about" className="text-black hover:text-[#13192d] font-montserrat font-medium">Why Choose Rothley Lodge?</a></li>
-              <li><a href="#process" className="text-black hover:text-[#13192d] font-montserrat font-medium">How Dental Implants Works?</a></li>
-              <li><a href="#gallery" className="text-black hover:text-[#13192d] font-montserrat font-medium">Gallery</a></li>
-              <li><a href="#faq" className="text-black hover:text-[#13192d] font-montserrat font-medium">FAQ</a></li>
-              <li><a href="#testimonial" className="text-black hover:text-[#13192d] font-montserrat font-medium">Testimonial</a></li>
-              <li><a href="#contactus" className="text-black hover:text-[#13192d] font-montserrat font-medium">Contact</a></li>
+              <li><a href="#" className="text-black hover:text-[#00102d] font-montserrat font-medium">Home</a></li>
+              <li><a href="#about" className="text-black hover:text-[#00102d] font-montserrat font-medium">Why Choose Rothley Lodge?</a></li>
+              <li><a href="#process" className="text-black hover:text-[#00102d] font-montserrat font-medium">How Dental Implants Works?</a></li>
+              <li><a href="#gallery" className="text-black hover:text-[#00102d] font-montserrat font-medium">Gallery</a></li>
+              <li><a href="#faq" className="text-black hover:text-[#00102d] font-montserrat font-medium">FAQ</a></li>
+              <li><a href="#testimonial" className="text-black hover:text-[#00102d] font-montserrat font-medium">Testimonial</a></li>
+              <li><a href="#contactus" className="text-black hover:text-[#00102d] font-montserrat font-medium">Contact</a></li>
             </ul>
           </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         {/* Section 2 - Social Icons and Privacy Bar */}
-        <div className="flex flex-col md:flex-row bg-[#13192d] px-[10%] justify-between items-center border-t border-gray-700 py-4">
+        <div className="flex flex-col md:flex-row bg-[#00102d] px-[10%] justify-between items-center border-t border-gray-700 py-4">
           {/* Social Media Icons */}
           <div className="flex space-x-4 mb-4 md:mb-0">
             <a href="https://www.instagram.com/rothleylodgedental/" target="_blank" rel="noopener noreferrer">

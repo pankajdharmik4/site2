@@ -15,7 +15,7 @@ const AboutUs = () => {
   return (
     <div id="about" className="relative  py-16">
       
-      <div className="bg-[#13192d] py-16">
+      <div className="bg-[#00102d] py-16">
       <div className="container mx-auto px-6 md:px-[10%]">
         <div className="flex flex-col md:flex-row items-center relative">
           {/* Section 1 - Main Image */}

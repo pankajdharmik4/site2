@@ -26,7 +26,7 @@ const Hero2 = ({ openModal }) => {
 
         <button
           onClick={openModal}
-          className="text-white text-xs md:text-sm lg:text-xl bg-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48"
+          className="text-white text-xs md:text-sm lg:text-xl bg-[#00102d] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48"
         >
           Get Free Invisalign Consultation
         </button>

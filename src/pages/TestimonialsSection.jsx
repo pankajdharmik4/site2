@@ -106,7 +106,7 @@ const TestimonialsSection = () => {
             {/* Right Button with White Arrow */}
             <button
               onClick={scrollRight}
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-[#13192d] text-white hover:bg-blue-600 transition duration-300 mx-2"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-[#00102d] text-white hover:bg-blue-600 transition duration-300 mx-2"
             >
               {/* Right Arrow (with tail) */}
               <svg
