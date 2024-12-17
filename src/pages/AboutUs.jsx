@@ -4,18 +4,18 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Carousel styl
 
 const AboutUs = () => {
   const images = [
-    "images/Denplan-Holder-Logo.png",
-    "images/brand-logo1.jpg",
-    "images/brand-logo2.jpg",
-    "images/brand-logo3.jpg",
-    "images/brand-logo4.jpg",
+    "images/d2-0.jpg",
+    "images/d2-1.png",
+    "images/d2-2.jpeg",
+    "images/d2-3.png",
+    // "images/brand-logo4.jpg",
     // "images/brand-logo5.jpg",
   ];
 
   return (
-    <div id="about" className="relative  py-16">
+    <div id="about" className="relative  py-16 bg-[#00102d]">
       
-      <div className="bg-[#00102d] py-16">
+      <div className=" py-16">
       <div className="container mx-auto px-6 md:px-[10%]">
         <div className="flex flex-col md:flex-row items-center relative">
           {/* Section 1 - Main Image */}
@@ -43,13 +43,13 @@ const AboutUs = () => {
       </div>
     </div>
       {/* Section - Below Bar with Images */}
-      <div className="mx-auto px-6 md:px-[10%] mt-10 ">
+      <div className="mx-auto px-6 md:px-[10%] pt-10 ">
         {/* Desktop View */}
         <div className="hidden md:flex justify-between items-center gap-12">
           {images.map((src, index) => (
             <div
               key={index}
-              className="flex justify-center items-center w-[18%] h-20"
+              className="flex justify-center items-center w-[18%] h-24"
             >
               <img
                 src={src}
@@ -74,7 +74,7 @@ const AboutUs = () => {
             {images.map((src, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center h-20"
+                className="flex justify-center items-center h-24"
               >
                 <img
                   src={src}

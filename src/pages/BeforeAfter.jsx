@@ -6,7 +6,7 @@ const beforeAfterImages = [
   'images/ba1.png',
   'images/ba2.png',
   'images/ba3.png',
-  'images/ba4.png',
+  'images/040.jpeg',
   'images/ba5.png',
   'images/ba6.png',
 ];
