@@ -63,16 +63,16 @@ const FormSection = () => {
   };
 
   return (
-    <div id='contactus' className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
+    <div id='contactus' className="flex flex-col md:flex-row py-8 mx-[5%] lg:mx-[10%]">
       {/* Image Section */}
-      <div className="flex-1 flex items-center justify-center p-4 md:w-[80%]">
+      <div className="flex-1 flex items-center justify-center md:w-[100%]">
         {/* <ReactCompareSlider
           itemOne={<ReactCompareSliderImage src={beforeImage} alt="Before" />}
           itemTwo={<ReactCompareSliderImage src={afterImage} alt="After" />}
           position={50}
           className="w-[80%] h-auto"
         /> */}
-        <img src="./images/SimonChardHeadshot.jpg" alt="" className='md:w-[60%] w-[50%]' />
+        <img src="./images/SimonChardHeadshot.jpg" alt="" className='md:w-[70%] w-[60%]' />
       </div>
 
       {/* Form Section */}
