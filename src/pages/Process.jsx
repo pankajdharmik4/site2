@@ -3,7 +3,7 @@ import { ArrowRightIcon, ArrowDownIcon } from '@heroicons/react/solid';
 
 const ProcessCard = ({ step, title, description }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 md:p-6 w-full md:w-72 h-full flex flex-col text-center md:text-left min-h-[300px]">
+    <div className="bg-white shadow-lg rounded-lg p-4 md:p-6 w-full md:w-72 h-full flex flex-col text-center md:text-left md:min-h-[300px]">
       <span className="font-bold text-lg md:text-xl mb-2 block">Step {step}</span>
       <h3 className="text-lg md:text-xl font-semibold text-[#00102d] mb-2">{title}</h3>
       <p className="text-sm md:text-base text-gray-600 flex-grow">

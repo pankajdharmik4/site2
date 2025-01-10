@@ -1,118 +1,43 @@
 export default function InvisalignBenefitsSection() {
+  const ProcessCard = ({  title, description }) => {
+    return (
+      <div className="bg-white shadow-lg rounded-lg p-4 md:p-6 w-full md:w-72 h-full flex flex-col text-center md:text-left md:min-h-[250px]">
+        <h3 className="text-lg md:text-xl font-semibold text-[#00102d] mb-2">{title}</h3>
+        <p className="text-sm md:text-base text-gray-800 flex-grow">
+          {description}
+        </p>
+      </div>
+    );
+  };
+
   return (
     <>
       {/* Invisalign benefits section */}
-      <div className="bg-gray-100 py-16">
+      <div className="py-16  bg-[#00102d]">
         <div className="container mx-auto px-6">
           {/* Section Heading and Side Text */}
           <div className="flex flex-col md:flex-row justify-between items-center mb-10 md:mx-[10%]">
-            <h2 className="font-lato text-3xl font-bold text-gray-800 mb-4 md:mb-0 ">
-              Why We Love Invisalign?
+            <h2 className="font-lato text-4xl font-bold text-white mb-4 md:mb-0 ">
+            Why We Love Dental Implants?
             </h2>
-            <p className="text-sm md:text-lg text-gray-600 md:pr-20 text-center md:text-left font-montserrat font-normal">
+            {/* <p className="text-sm md:text-lg text-gray-600 md:pr-20 text-center md:text-left font-montserrat font-normal">
               Our Invisalign treatment can address a wide <br /> range of cosmetic dental issues such as:
-            </p>
+            </p> */}
           </div>
-
-          {/* Cards Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-[10%]">
-            {/* Card 1 */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img 
-                  src="/images/img_image_8.png" 
-                  alt="Avatar" 
-                  className="h-14 w-14 object-cover rounded-full" 
-                />
-              </div>
-              <div>
-                <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                Invisalign aligners are tailored  <br />to fit your teeth perfectly.
-                </h3>
-              </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6 mx-[5%]">
+          <ProcessCard 
+              title="Natural-Looking Results"
+              description="Dental implants look, feel, and function just like real teeth."
+            />
+            <ProcessCard 
+              title="Long-Lasting Solution"
+              description="Designed to last for years, when well looked after implants provide a durable and reliable option for replacing missing teeth."
+            />
+            <ProcessCard 
+              title="Get your bite back!"
+              description="Implants help maintain a stable bite, prevent shifting and overloading of surrounding teeth which enhances overall oral function and your ability to eat with comfort."
+            />
             </div>
-
-            {/* Card 2 */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img 
-                  src="/images/img_image_8.png" 
-                  alt="Avatar" 
-                  className="h-14 w-14 object-cover rounded-full" 
-                />
-              </div>
-              <div>
-                <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                Clear aligners are barely visible,<br />letting you smile confidently.
-                </h3>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img 
-                  src="/images/img_image_8.png" 
-                  alt="Avatar" 
-                  className="h-14 w-14 object-cover rounded-full" 
-                />
-              </div>
-              <div>
-                <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                No metal brackets or wires,<br />  just smooth, comfortable aligners.
-                </h3>
-              </div>
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img 
-                  src="/images/img_image_8.png" 
-                  alt="Avatar" 
-                  className="h-14 w-14 object-cover rounded-full" 
-                />
-              </div>
-              <div>
-                <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                You can take them out to eat,<br /> drink, and brush, making life easier.
-                </h3>
-              </div>
-            </div>
-
-            {/* Card 5 */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img 
-                  src="/images/img_image_8.png" 
-                  alt="Avatar" 
-                  className="h-14 w-14 object-cover rounded-full" 
-                />
-              </div>
-              <div>
-                <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                Invisalign offers a clear plan  <br /> with predictable results.
-                </h3>
-              </div>
-            </div>
-
-            {/* Card 6 */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img 
-                  src="/images/img_image_8.png" 
-                  alt="Avatar" 
-                  className="h-14 w-14 object-cover rounded-full" 
-                />
-              </div>
-              <div>
-                <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                Improves oral health and boosts <br /> 
-                confidence with a straighter smile.
-                </h3>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>

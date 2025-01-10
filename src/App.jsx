@@ -36,9 +36,10 @@ const App = () => {
        <Bar/>
        <BeforeAfterSection/>
        <AboutUs/>
-       {/* <InvisalignBenefitsSection/> */}
        <ProcessSection/>
+       <InvisalignBenefitsSection/>
        {/* <HowItWorks/> */}
+  
        <FAQSection/>
        <TestimonialsSection/>
        <FormSection/>

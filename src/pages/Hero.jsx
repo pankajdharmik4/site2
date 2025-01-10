@@ -16,15 +16,15 @@ const Hero = ({ openModal }) => {
           className="w-64 h-64 rounded-lg object-cover mb-4 bg-white" // Adjust size as needed
         />
         <h1 className="text-2xl font-lato font-bold text-white mb-2">
-          Restore Your Smile with Dental Implants in Staines
+        Restore Your Smile with Dental Implants at Rothley Lodge Dental Practice
         </h1>
         <p className="text-xs font-montserrat font-normal text-white">
         {/* As Taylor Swift once said - “You've got a smile that could light up this whole town!”  */}
-        Let's get that smile back for you with dental implants! If you're looking for a long-lasting solution to missing teeth, We offer dental implants, a secure and natural-looking option.
+        Missing teeth? Let us help you regain your confidence and smile with dental implants—the secure, long-lasting, and natural-looking solution to restore your oral health and smile.
         </p>
-        <p className="text-xs font-montserrat font-normal text-white">
+        {/* <p className="text-xs font-montserrat font-normal text-white">
         At Rothley Lodge Dental Practice, we boast over 40 years of experience and have earned our reputation as an award-winning practice. 
-        </p>
+        </p> */}
         {/* <p className="text-xs font-montserrat font-normal text-white">
         Dental implants are designed to look and function like natural teeth, providing a stable foundation for crowns or bridges. Unlike dentures, they do not shift or slip, allowing you to eat, speak, and smile with confidence.
         </p>
@@ -43,19 +43,19 @@ const Hero = ({ openModal }) => {
       <div className="hidden md:flex relative w-full h-full md:h-[500px] lg:h-[600px] flex-col-reverse md:flex-row-reverse">
         {/* Section: Text on the Right */}
         <div className="flex flex-col items-center justify-center w-full lg:w-[60%] md:p-4 p-2 mt-[4%] text-white">
-          <h1 className="text-xs md:text-3xl lg:text-4xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">Restore Your Smile with Dental Implants in Staines
+          <h1 className="text-xs md:text-3xl lg:text-4xl md:mb-4 text-center lg:text-left mx-[7%] font-lato font-bold">Restore Your Smile with Dental Implants at Rothley Lodge Dental Practice
           </h1>
-          <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
+          <p className="text-xs md:text-xl md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
             {/* As Taylor Swift once said - “You've got a smile that could light up this whole town!”  */}
-            Let's get that smile back for you with dental implants! If you're looking for a long-lasting solution to missing teeth, We offer dental implants, a secure and natural-looking option.
+            Missing teeth? Let us help you regain your confidence and smile with dental implants—the secure, long-lasting, and natural-looking solution to restore your oral health and smile.
           </p>
-          <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
+          {/* <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
             At Rothley Lodge Dental Practice, we boast over 40 years of experience and have earned our reputation as an award-winning practice. Our skilled team is led by esteemed cosmetic dentist Dr. Simon Chard, recognised as Dentistry Person of the Year in 2022.
           </p>
           <p className="text-xs md:text-sm md:mb-4 lg:mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
             Dental implants are designed to look and function like natural teeth, providing a stable foundation for crowns or bridges. Unlike dentures, they do not shift or slip, allowing you to eat, speak and smile with confidence.         At Rothley Lodge Dental Practice, your journey to a renewed smile begins with us!
 
-          </p>
+          </p> */}
           {/* <p className="text-xs md:text-sm mb-8 text-center lg:text-left mx-[7%] font-montserrat font-normal">
             At Rothley Lodge Dental Practice, your journey to a renewed smile begins with us!
           </p> */}
