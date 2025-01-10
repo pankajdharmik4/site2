@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 const testimonials = [
   {
     image: 'images/img_image_11.png',
-    name: 'Tony Wilson',
+    name: 'Tony',
     comment: 'I’ve been coming to the practice for about a year now. After a bike accident, I needed an implant treatment, which I received from Nikhil at Rothley Lodge. I’m so happy with the results and love my new smile!',
     rating: 5,
   },
