@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question:"How long can I expect dental implants to last?",
-    answer:"Dental implants can last a lifetime with proper care and maintenance, making them a durable and long-term solution for missing teeth."
+    answer:"Dental implants can last a lifetime with proper care and maintenance. According to research around 95% of dental implants for single teeth survive at least 10 years making them a durable and long-term solution for missing teeth."
   }
 ];
 

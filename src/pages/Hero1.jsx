@@ -8,7 +8,7 @@ const Hero1 = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="relative w-full h-auto flex flex-col items-center justify-center bg-cover bg-center bg-[#13192d]" 
+    <div className="relative w-full h-auto flex flex-col items-center justify-center bg-cover bg-center bg-[#00102d]" 
     // style={{ backgroundImage: "url('/images/full-hero-bg.png')" }}
     >
       {/* Section 1: Title */}

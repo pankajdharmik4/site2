@@ -26,7 +26,7 @@ const App = () => {
   return (
  
     <>
-        <Navbar/>
+        {/* <Navbar/> */}
         <BookingModal isOpen={isModalOpen} onClose={closeModal} />
 
        {/* <Hero/> */}
@@ -36,9 +36,10 @@ const App = () => {
        <Bar/>
        <BeforeAfterSection/>
        <AboutUs/>
-       {/* <InvisalignBenefitsSection/> */}
        <ProcessSection/>
+       <InvisalignBenefitsSection/>
        {/* <HowItWorks/> */}
+  
        <FAQSection/>
        <TestimonialsSection/>
        <FormSection/>

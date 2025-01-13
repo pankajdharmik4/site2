@@ -63,16 +63,16 @@ const FormSection = () => {
   };
 
   return (
-    <div id='contactus' className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
+    <div id='contactus' className="flex flex-col md:flex-row py-8 mx-[5%] lg:mx-[10%]">
       {/* Image Section */}
-      <div className="flex-1 flex items-center justify-center p-4">
+      <div className="flex-1 flex items-center justify-center md:w-[100%]">
         {/* <ReactCompareSlider
           itemOne={<ReactCompareSliderImage src={beforeImage} alt="Before" />}
           itemTwo={<ReactCompareSliderImage src={afterImage} alt="After" />}
           position={50}
           className="w-[80%] h-auto"
         /> */}
-        <img src="./images/contactus.png" alt="" />
+        <img src="./images/SimonChardHeadshot.jpg" alt="" className='md:w-[70%] w-[60%]' />
       </div>
 
       {/* Form Section */}
@@ -133,7 +133,7 @@ const FormSection = () => {
             </div>
             <button
               type="submit"
-              className={isSubmitDisabled ? "w-full bg-[#808080] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#808080] transition duration-300" : "w-full bg-[#13192d] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300"}
+              className={isSubmitDisabled ? "w-full bg-[#808080] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#808080] transition duration-300" : "w-full bg-[#00102d] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300"}
               disabled={isSubmitDisabled}
             >
               Submit

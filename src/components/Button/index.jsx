@@ -34,7 +34,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`${className} bg-[#13192d]  flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap ${shape && shapes[shape]} ${size && sizes[size]} ${variant && variants[variant]?.[color]}`}
+      className={`${className} bg-[#00102d]  flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap ${shape && shapes[shape]} ${size && sizes[size]} ${variant && variants[variant]?.[color]}`}
       {...restProps}
     >
       {!!leftIcon && leftIcon}

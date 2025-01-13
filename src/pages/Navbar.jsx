@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-[#13192d] px-4 lg:px-16 z-50">
+      <nav className="w-full bg-[#00102d] px-4 lg:px-16 z-50">
         <div className="container mx-auto flex items-center justify-between px-4">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -47,7 +47,7 @@ const Navbar = () => {
           </div> */}
 
           {/* Book Now Button and Contact for Desktop */}
-          <div className="hidden lg:flex flex-col items-center">
+          <div className="hidden lg:flex flex-col items-center p-4">
             <Button
               size="xs"
               variant="fill"
@@ -86,13 +86,13 @@ const Navbar = () => {
               size="xs"
               variant="fill"
               onClick={openModal}
-              className="bg-[#13192D] text-white mt-4 w-full py-2 rounded-lg font-montserrat font-medium"
+              className="bg-[#00102d] text-white mt-4 w-full py-2 rounded-lg font-montserrat font-medium"
             >
               Book Now
             </Button>
 
             {/* Contact Number for Mobile */}
-            <a href="tel:01784453448" className="text-black hover:text-[#13192d] flex items-center text-xl mt-4">
+            <a href="tel:01784453448" className="text-black hover:text-[#00102d] flex items-center text-xl mt-4">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
               01784 453448
             </a>
