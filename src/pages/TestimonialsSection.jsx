@@ -1,43 +1,7 @@
 import React, { useRef } from 'react';
+import {data} from '../data/data'
 
-const testimonials = [
-  {
-    image: 'images/img_image_11.png',
-    name: 'Tony',
-    comment: 'I’ve been coming to the practice for about a year now. After a bike accident, I needed an implant treatment, which I received from Nikhil at Rothley Lodge. I’m so happy with the results and love my new smile!',
-    rating: 5,
-  },
-  {
-    image: 'images/img_image_11.png',
-    name: 'Karen',
-    comment: 'I’m 60 years old and have been a patient here for 30 years. After a fall in Mexico, I needed two implants and multiple treatments. Thanks to Dr. Simon Chard, the whole process was completely painless, and I felt supported every step of the way. I’m so grateful for the excellent care I received!',
-    rating: 5,
-  },
-  {
-    image: 'images/img_image_11.png',
-    name: 'James',
-    comment: 'I’m so happy with my implant treatment! The results have given me so much confidence, and I couldn’t be more pleased with the care I received. It’s made such a difference!',
-    rating: 5,
-  },
-  {
-    image: 'images/img_image_11.png',
-    name: 'Della',
-    comment: 'I’ve been a patient of Dr. Nick Chard for over 30 years and recently received specialised implants treatment from Dr. Simon Chard. I’m absolutely delighted with the results—my teeth have been completely transformed! I highly recommend Rothley Lodge Dental, and Gemma has been a great help with scheduling.',
-    rating: 5,
-  },
-  // {
-  //   image: 'images/img_image_11.png',
-  //   name: 'Emily T.',
-  //   comment: 'My implants have completely transformed my confidence. I can eat, smile, and talk without worrying. Thank you, Rothley Lodge!',
-  //   rating: 5,
-  // },
-  // {
-  //   image: 'images/img_image_11.png',
-  //   name: 'Jack B.',
-  //   comment: 'Getting implants here was the best decision. The care I received was exceptional, and the results speak for themselves.',s
-  //   rating: 5,
-  // },
-];
+const testimonials = data.testimonial;
 
 const TestimonialsSection = () => {
   const scrollRef = useRef();

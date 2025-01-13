@@ -10,27 +10,6 @@ import Hero2 from './Hero2';
 const HeroCarousel = ({openModal}) => {
   
   return (
-    // <Swiper
-    //   spaceBetween={10}
-    //   slidesPerView={1}
-    //   loop={true}
-    //   modules={[Autoplay]} // Add Autoplay module here
-    //   autoplay={{
-    //     delay: 4000, // Time in milliseconds for each slide
-    //     disableOnInteraction: false, // Keep autoplay running after interaction
-    //   }}
-    //   className="w-full md:h-auto h-[350px]"
-    // >
-    //   <SwiperSlide > {/* Adjust heights as needed */}
-    //     <Hero openModal={openModal}/>
-    //   </SwiperSlide>
-    //   <SwiperSlide >
-    //     <Hero1 />
-    //   </SwiperSlide>
-    //   <SwiperSlide >
-    //     <Hero2 openModal={openModal} />
-    //   </SwiperSlide>
-    // </Swiper>
             <Hero openModal={openModal}/>
 
   );

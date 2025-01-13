@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel'; // Install this library first
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Carousel styles
+import {data} from '../data/data'
 
 const AboutUs = () => {
   const images = [
@@ -30,19 +31,19 @@ const AboutUs = () => {
             {/* Section 2 - Title and Description */}
             <div className="w-full md:w-[60%] md:pl-12 text-center md:text-left px-4">
               <h2 className="text-3xl md:text-4xl text-white mb-6 font-lato font-bold">
-                Why Choose Rothley Lodge for Your Dental Implant Needs?
+                {data.aboutUs.heading}
               </h2>
               <p className="text-white font-montserrat font-normal mb-2 text-xs md:text-sm">
-                <b>Over 40 Years of Expertise:</b> Trusted by generations in Staines, our award-winning team combines experience with excellence to deliver outstanding care.
+                <b>{data.aboutUs.para1.title}</b> {data.aboutUs.para1.data}
               </p>
               <p className="text-white font-montserrat font-normal mb-2 text-xs md:text-sm">
-               <b> The Latest 3D Technology:</b> We use the latest technology and techniques to ensure precision, safety, and exceptional results. The devil is in the detail with implant dentistry and we use 3D imaging, digital planning and 3D printed surgical guides to ensure optimal outcomes.
+               <b> {data.aboutUs.para2.title}</b> {data.aboutUs.para2.data}
               </p>
               <p className="text-white font-montserrat font-normal mb-2 text-xs md:text-sm">
-               <b> Aware Winning Team:</b> Our experienced clinicians, including the UK’s Best Young Dentist and previous President of the British Academy of Cosmetic Dentistry (BACD), focus on providing dental implants which really look like your natural teeth. 
+               <b> {data.aboutUs.para3.title}</b> {data.aboutUs.para3.data}
               </p>
               <p className="text-white font-montserrat font-normal text-xs md:text-sm">
-               <b> Personalised 5 Star Care:</b> We know having a dental implant can be worrying for our patients - so we strive to ensure every implant journey is tailored to your unique needs, ensuring a smooth, stress-free process from consultation to completion.
+               <b> {data.aboutUs.para4.title}</b> {data.aboutUs.para4.data}
               </p>
             </div>
           </div>

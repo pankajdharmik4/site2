@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-import beforeImage from '../assets/002.jpg';
-import afterImage from '../assets/001.jpg';
+import {data} from '../data/data'
 
 const FormSection = () => {
   // State for each field
@@ -79,10 +77,10 @@ const FormSection = () => {
       <div className="flex-1 flex items-center justify-center p-4">
         <div className="bg-white shadow-lg rounded-lg p-6 md:w-[80%]">
           <h2 className="text-2xl mb-1 text-center font-montserrat font-semibold">
-            Take The First Step Toward The Smile You’ve Always Wanted
+            {data.contactUs.title}
           </h2>
           <div className="mb-4">
-            <p class="text-gray-400 text-xs">Please fill out your details and a member of our team will be in touch.</p>
+            <p class="text-gray-400 text-xs">{data.contactUs.para}</p>
           </div>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">

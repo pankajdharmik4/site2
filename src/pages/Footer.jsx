@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
+import { data } from '../data/data'
 const Footer = () => {
   return (
     <footer className="bg-gray-100 pt-[5%] text-black">
@@ -10,17 +10,17 @@ const Footer = () => {
           {/* Section 1 - Logo, Address, Contact */}
           <div className="flex-1 flex flex-col justify-start mb-6 lg:mb-0 text-center md:text-left md:items-start md:min-h-[300px]">
             <img src="images/logo.png" alt="Logo" className="h-16 w-28 mx-auto md:mx-0 rounded-md" />
-            <p className="pt-[5%] font-montserrat font-medium">15 Cherry Orchard, Staines,<br /> Middlesex TW18 2DE</p>
+            <p className="pt-[5%] font-montserrat font-medium">{data.contactInfo.address.part1}<br /> {data.contactInfo.address.part2}</p>
             <p className="font-montserrat font-medium my-2">
               <a href="tel:01784453448" className="text-black hover:text-[#00102d] text-sm">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                01784 453448
+                {data.contactInfo.number}
               </a>
             </p>
             <p className="font-montserrat font-medium">
               <a href="mailto:info@rothleylodgedentalpractice.co.uk" className="text-black hover:text-[#00102d] text-sm mx-auto md:mx-0">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                info@rothleylodgedentalpractice.co.uk
+                {data.contactInfo.email}
               </a>
             </p>
           </div>

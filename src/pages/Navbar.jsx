@@ -3,6 +3,7 @@ import { Button } from '../components'; // Adjust the import path based on your 
 import BookingModal from './BookingModal'; // Adjust the import path as needed
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faPhone } from '@fortawesome/free-solid-svg-icons'; // Import the phone icon
+import { data } from '../data/data'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,13 +39,6 @@ const Navbar = () => {
             <img src="/images/logo.png" alt="Logo" className="h-16 md:h-16 lg:h-24 w-auto" />
           </div>
 
-          {/* Desktop Nav Links */}
-          {/* <div className="hidden space-x-4 md:space-x-8 lg:flex">
-            <a href="#about" className="text-white font-montserrat font-medium text-sm lg:text-lg">About Us</a>
-            <a href="#process" className="text-white font-montserrat font-medium text-sm lg:text-lg">The Process</a>
-            <a href="#faq" className="text-white font-montserrat font-medium text-sm lg:text-lg">FAQ</a>
-            <a href="#testimonial" className="text-white font-montserrat font-medium text-sm lg:text-lg">Testimonial</a>
-          </div> */}
 
           {/* Book Now Button and Contact for Desktop */}
           <div className="hidden lg:flex flex-col items-center p-4">
@@ -60,18 +54,10 @@ const Navbar = () => {
             {/* Contact Number for Desktop */}
             <a href="tel:01784453448" className="text-white hover:text-gray-300 flex items-center text-xl mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
-              01784 453448
+              {data.contactInfo.number}
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          {/* <div className="lg:hidden ml-4 ">
-            <button onClick={toggleMenu} className="text-white focus:outline-none">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div> */}
         </div>
 
         {/* Mobile Navbar Links */}
