@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function Bar() {
+export default function Bar({openModal}) {
   const handleClick = () => {
-    alert("Desktop image clicked!");
+    // alert("Desktop image clicked!");
+    openModal()
   };
 
   return (

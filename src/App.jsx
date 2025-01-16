@@ -24,7 +24,7 @@ const App = () => {
     <>
         <BookingModal isOpen={isModalOpen} onClose={closeModal} />
        <HeroCarousel openModal={openModal}/>
-       <Bar/>
+       <Bar openModal={openModal}/>
        <BeforeAfterSection/>
        <AboutUs/>
        <ProcessSection/>
