@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
-import {data} from '../data/data'
+import { data } from '../data/data'
+import axios from 'axios';
+
 
 const FormSection = () => {
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^\+?[0-9]{10,13}$/;
+  const isValidName = /^[a-zA-Z\s]+$/;
   // State for each field
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -32,32 +38,64 @@ const FormSection = () => {
 
   const validatePhone = (phone) => {
     const phoneRegex = /^\+?[0-9]{10,13}$/;
-    const isValid = phoneRegex.test(phone);
-    setPhoneError(isValid ? '' : 'Invalid phone number.');
+    if (phoneRegex.test(phone)) {
+      setPhoneError('');
+      return true;
+    } else {
+      setPhoneError('Invalid phone number.');
+      return false;
+    }
     return isValid;
   };
 
-  const handleChange = (setter, validator) => (e) => {
+  const handleChange = (setter) => (e) => {
     const value = e.target.value;
     setter(value);
-    validator(value);
 
     const isFormValid = validateName(name) && validateEmail(email) && validatePhone(phone);
     setIsSubmitDisabled(!isFormValid);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateName(name) && validateEmail(email) && validatePhone(phone)) {
-      // Handle form submission logic
-      console.log({ name, email, phone, message });
-      // Clear form data after submission
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
+
+    if (!isSubmitDisabled) {
       setIsSubmitDisabled(true);
+
+      try {
+        const response = await axios.post('https://www.implants.rothleylodgedentalpractice.co.uk/my_server_project/public/index.php', {
+          name,
+          email,
+          phone,
+          message,
+          type: 'Implants'
+        });
+
+        if (response.data.success) {
+          console.log('Mail sent successfully');
+          // Reset the form
+          setName('');
+          setEmail('');
+          setPhone('');
+          setMessage('');
+          onClose();
+        } else {
+          console.error('Failed to send mail:', response.data.error);
+        }
+      } catch (error) {
+        console.error('Error sending mail:', error);
+      } finally {
+        setIsSubmitDisabled(false);
+      }
     }
+  };
+
+  const validateForm = () => {
+    const isNameValid = name.trim().length > 1;
+    const isEmailValid = emailRegex.test(email)
+    const isPhoneValid = phoneRegex.test(phone);
+
+    setIsSubmitDisabled(!(isNameValid && isEmailValid && isPhoneValid));
   };
 
   return (
@@ -87,9 +125,9 @@ const FormSection = () => {
               <input
                 type="text"
                 id="name"
-                placeholder="Your Name"
                 value={name}
-                onChange={handleChange(setName, validateName)}
+                onChange={(e) => setName(e.target.value)}
+                onBlur={() => { validateName(name); validateForm() }}
                 required
                 className={`mt-1 block w-full p-2 border ${nameError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
               />
@@ -99,9 +137,9 @@ const FormSection = () => {
               <input
                 type="email"
                 id="email"
-                placeholder="Email"
                 value={email}
-                onChange={handleChange(setEmail, validateEmail)}
+                onChange={(e) => setEmail(e.target.value)}
+                onBlur={() => { validateEmail(email); validateForm() }}
                 required
                 className={`mt-1 block w-full p-2 border ${emailError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
               />
@@ -111,9 +149,9 @@ const FormSection = () => {
               <input
                 type="tel"
                 id="phone"
-                placeholder="Your Phone Number"
                 value={phone}
-                onChange={handleChange(setPhone, validatePhone)}
+                onChange={(e) => setPhone(e.target.value)}
+                onBlur={() => { validatePhone(phone); validateForm() }}
                 required
                 className={`mt-1 block w-full p-2 border ${phoneError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
               />

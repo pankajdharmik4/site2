@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../components'; // Adjust the import path as needed
+import axios from 'axios';
 
 const BookingModal = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
@@ -55,18 +55,37 @@ const BookingModal = ({ isOpen, onClose }) => {
   };
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!isSubmitDisabled) {
-      console.log('Form submitted:', { name, email, phone, message });
-      // Reset the form
-      setName('');
-      setEmail('');
-      setPhone('');
-      // setPreferredDate('');
-      setMessage('');
-      onClose();
+      setIsSubmitDisabled(true);
+
+      try {
+        const response = await axios.post('https://www.implants.rothleylodgedentalpractice.co.uk/my_server_project/public/index.php', {
+          name,
+          email,
+          phone,
+          message,
+          type: 'Implants'
+        });
+
+        if (response.data.success) {
+          console.log('Mail sent successfully');
+          // Reset the form
+          setName('');
+          setEmail('');
+          setPhone('');
+          setMessage('');
+          onClose();
+        } else {
+          console.error('Failed to send mail:', response.data.error);
+        }
+      } catch (error) {
+        console.error('Error sending mail:', error);
+      } finally {
+        setIsSubmitDisabled(false);
+      }
     }
   };
 
@@ -121,18 +140,6 @@ const BookingModal = ({ isOpen, onClose }) => {
             />
             {phoneError && <p className="text-red-500 text-sm mt-1">{phoneError}</p>}
           </div>
-
-          {/* <div className="mb-4">
-            <label htmlFor="preferredDate" className="block text-sm font-medium text-gray-700">Preferred Date</label>
-            <input
-              type="date"
-              id="preferredDate"
-              value={preferredDate}
-              onChange={(e) => setPreferredDate(e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
-              required
-            />
-          </div> */}
 
           <div className="mb-4">
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message (Optional)</label>
