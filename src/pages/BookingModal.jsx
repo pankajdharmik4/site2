@@ -20,11 +20,16 @@ const BookingModal = ({ isOpen, onClose }) => {
   const [phoneError, setPhoneError] = useState('');
   const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
 
-  const recaptchaSiteKey = '​6Lf_kLcqAAAAAEWDyplOb-RdtEcDmC-4ZnYqTE4j';
+  const recaptchaSiteKey = '6Lf_kLcqAAAAAEWDyplOb-RdtEcDmC-4ZnYqTE4j';
 
   useEffect(() => {
     loadRecaptcha();
   }, []);
+
+  // Add useEffect to validate form whenever inputs change
+  useEffect(() => {
+    validateForm();
+  }, [name, email, phone, recaptchaToken, recaptchaChecked]);
 
   const loadRecaptcha = () => {
     if (!window.grecaptcha) {
@@ -46,18 +51,17 @@ const BookingModal = ({ isOpen, onClose }) => {
         if (window.grecaptcha) {
           const token = await window.grecaptcha.execute(recaptchaSiteKey, { action: 'submit' });
           setRecaptchaToken(token);
-          validateForm();
         } else {
           setRecaptchaChecked(false);
         }
       } catch (error) {
+        console.error('reCAPTCHA error:', error);
         setRecaptchaChecked(false);
       } finally {
         setIsVerifying(false);
       }
     } else {
       setRecaptchaToken('');
-      validateForm();
     }
   };
 
@@ -95,7 +99,12 @@ const BookingModal = ({ isOpen, onClose }) => {
     const isNameValid = validateName(name);
     const isEmailValid = validateEmail(email);
     const isPhoneValid = validatePhone(phone);
-    setIsSubmitDisabled(!(isNameValid && isEmailValid && isPhoneValid && recaptchaToken && recaptchaChecked));
+    const isValid = isNameValid && isEmailValid && isPhoneValid && recaptchaToken && recaptchaChecked;
+    setIsSubmitDisabled(!isValid);
+  };
+
+  const handleInputChange = (setter) => (e) => {
+    setter(e.target.value);
   };
 
   const handleSubmit = async (e) => {
@@ -130,7 +139,6 @@ const BookingModal = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50 p-4">
       <div className="bg-white rounded-xl p-6 md:p-8 max-w-md w-full shadow-2xl relative animate-fade-in">
-        {/* Close Button */}
         <button
           onClick={onClose}
           className="absolute right-4 top-4 text-gray-400 hover:text-gray-600 transition-colors"
@@ -138,17 +146,13 @@ const BookingModal = ({ isOpen, onClose }) => {
           <X className="w-5 h-5" />
         </button>
 
-        {/* Header */}
         <div className="text-center mb-8">
           <h5 className="text-2xl font-bold text-gray-900 mb-2">Book Your Appointment</h5>
           <p className="text-gray-500 text-sm">Please fill out your details below</p>
         </div>
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Input Fields */}
           <div className="space-y-4">
-            {/* Name Field */}
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                 Full Name
@@ -157,8 +161,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                 type="text"
                 id="name"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
-                onBlur={() => { validateName(name); validateForm(); }}
+                onChange={handleInputChange(setName)}
                 className={`w-full px-4 py-2.5 rounded-lg border ${
                   nameError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
                 } focus:ring-2 focus:ring-opacity-20 ${
@@ -169,7 +172,6 @@ const BookingModal = ({ isOpen, onClose }) => {
               {nameError && <p className="mt-1 text-sm text-red-500">{nameError}</p>}
             </div>
 
-            {/* Email Field */}
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                 Email Address
@@ -178,8 +180,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                 type="email"
                 id="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                onBlur={() => { validateEmail(email); validateForm(); }}
+                onChange={handleInputChange(setEmail)}
                 className={`w-full px-4 py-2.5 rounded-lg border ${
                   emailError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
                 } focus:ring-2 focus:ring-opacity-20 ${
@@ -190,7 +191,6 @@ const BookingModal = ({ isOpen, onClose }) => {
               {emailError && <p className="mt-1 text-sm text-red-500">{emailError}</p>}
             </div>
 
-            {/* Phone Field */}
             <div>
               <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
                 Phone Number
@@ -199,8 +199,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                 type="tel"
                 id="phone"
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                onBlur={() => { validatePhone(phone); validateForm(); }}
+                onChange={handleInputChange(setPhone)}
                 className={`w-full px-4 py-2.5 rounded-lg border ${
                   phoneError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
                 } focus:ring-2 focus:ring-opacity-20 ${
@@ -211,7 +210,6 @@ const BookingModal = ({ isOpen, onClose }) => {
               {phoneError && <p className="mt-1 text-sm text-red-500">{phoneError}</p>}
             </div>
 
-            {/* Message Field */}
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                 Message (Optional)
@@ -219,13 +217,12 @@ const BookingModal = ({ isOpen, onClose }) => {
               <textarea
                 id="message"
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={handleInputChange(setMessage)}
                 rows="3"
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-20 transition-colors"
               />
             </div>
 
-            {/* Custom reCAPTCHA Checkbox */}
             <div className="mt-6">
               <div className="flex items-center justify-between p-4 border rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
                 <div className="flex items-center space-x-3">
@@ -265,7 +262,6 @@ const BookingModal = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          {/* Action Buttons */}
           <div className="flex justify-end space-x-3 pt-6">
             <button
               type="button"
