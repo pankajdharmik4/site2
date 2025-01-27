@@ -44,12 +44,13 @@ const BookingModal = ({ isOpen, onClose }) => {
   const handleRecaptchaCheck = async (e) => {
     const checked = e.target.checked;
     setRecaptchaChecked(checked);
-    
+
     if (checked) {
       setIsVerifying(true);
       try {
         if (window.grecaptcha) {
           const token = await window.grecaptcha.execute(recaptchaSiteKey, { action: 'submit' });
+          console.log("tooken", token)
           setRecaptchaToken(token);
         } else {
           setRecaptchaChecked(false);
@@ -127,7 +128,7 @@ const BookingModal = ({ isOpen, onClose }) => {
           onClose();
         }
       } catch (error) {
-        console.error('Error sending mail:', error);
+        console.error("Error sending request: ", error.response ? error.response.data : error.message);
       } finally {
         setIsSubmitDisabled(false);
       }
@@ -162,11 +163,9 @@ const BookingModal = ({ isOpen, onClose }) => {
                 id="name"
                 value={name}
                 onChange={handleInputChange(setName)}
-                className={`w-full px-4 py-2.5 rounded-lg border ${
-                  nameError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
-                } focus:ring-2 focus:ring-opacity-20 ${
-                  nameError ? 'focus:ring-red-500' : 'focus:ring-blue-500'
-                } transition-colors`}
+                className={`w-full px-4 py-2.5 rounded-lg border ${nameError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
+                  } focus:ring-2 focus:ring-opacity-20 ${nameError ? 'focus:ring-red-500' : 'focus:ring-blue-500'
+                  } transition-colors`}
                 required
               />
               {nameError && <p className="mt-1 text-sm text-red-500">{nameError}</p>}
@@ -181,11 +180,9 @@ const BookingModal = ({ isOpen, onClose }) => {
                 id="email"
                 value={email}
                 onChange={handleInputChange(setEmail)}
-                className={`w-full px-4 py-2.5 rounded-lg border ${
-                  emailError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
-                } focus:ring-2 focus:ring-opacity-20 ${
-                  emailError ? 'focus:ring-red-500' : 'focus:ring-blue-500'
-                } transition-colors`}
+                className={`w-full px-4 py-2.5 rounded-lg border ${emailError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
+                  } focus:ring-2 focus:ring-opacity-20 ${emailError ? 'focus:ring-red-500' : 'focus:ring-blue-500'
+                  } transition-colors`}
                 required
               />
               {emailError && <p className="mt-1 text-sm text-red-500">{emailError}</p>}
@@ -200,11 +197,9 @@ const BookingModal = ({ isOpen, onClose }) => {
                 id="phone"
                 value={phone}
                 onChange={handleInputChange(setPhone)}
-                className={`w-full px-4 py-2.5 rounded-lg border ${
-                  phoneError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
-                } focus:ring-2 focus:ring-opacity-20 ${
-                  phoneError ? 'focus:ring-red-500' : 'focus:ring-blue-500'
-                } transition-colors`}
+                className={`w-full px-4 py-2.5 rounded-lg border ${phoneError ? 'border-red-300 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
+                  } focus:ring-2 focus:ring-opacity-20 ${phoneError ? 'focus:ring-red-500' : 'focus:ring-blue-500'
+                  } transition-colors`}
                 required
               />
               {phoneError && <p className="mt-1 text-sm text-red-500">{phoneError}</p>}
@@ -236,7 +231,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                     />
                     <div className={`
                       w-6 h-6 rounded-md border-2
-                      ${isVerifying ? 'bg-gray-100 border-gray-300' : 
+                      ${isVerifying ? 'bg-gray-100 border-gray-300' :
                         recaptchaChecked ? 'bg-blue-500 border-blue-500' : 'bg-white border-gray-300'}
                       flex items-center justify-center
                       transition-all duration-200
@@ -253,8 +248,8 @@ const BookingModal = ({ isOpen, onClose }) => {
                     {isVerifying ? 'Verifying...' : 'I\'m not a robot'}
                   </span>
                 </div>
-                <img 
-                  src="/images/recaptcha.png" 
+                <img
+                  src="/images/recaptcha.png"
                   alt="reCAPTCHA"
                   className="h-6 w-6 object-contain"
                 />
@@ -277,8 +272,8 @@ const BookingModal = ({ isOpen, onClose }) => {
                 px-6 py-2.5 rounded-lg font-medium
                 transition-all duration-200
                 focus:outline-none focus:ring-2 focus:ring-opacity-50
-                ${isSubmitDisabled 
-                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
+                ${isSubmitDisabled
+                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                   : 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 focus:ring-blue-500'}
               `}
             >
